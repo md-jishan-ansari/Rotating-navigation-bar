@@ -28,6 +28,7 @@ body{
 
 .circle-container{
     position: fixed;
+    z-index: 1;
     top: -100px;
     left: -100px;
 }
@@ -40,14 +41,10 @@ body{
     transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle{
-    transform: rotate(-70deg);
+.circle.circle-active{
+    transform: rotate(-90deg);
 }
-.container.show-nav .circle-container{
-    position: fixed;
-    top: -100px;
-    left: -100px;
-}
+
 
 .circle button{
     position: absolute;
